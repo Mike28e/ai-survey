@@ -71,6 +71,7 @@ export function useSurveyLogic(surveyId: string, surveyStructure: Question[], su
     const minimalQs = surveyStructure.map((q) => ({
       id: q.id,
       text: q.text,
+      choices: q.choices,
     }))
 
     try {
